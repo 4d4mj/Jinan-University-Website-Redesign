@@ -1,0 +1,80 @@
+.container-fluid {
+  background-image: linear-gradient(
+      to right,
+      var(--dark) 0%,
+      var(--dark) 50%,
+      transparent 100%
+    ),
+    url("../../assets/images/jinan-building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: var(--dark);
+}
+form {
+  max-width: 44rem;
+  padding: 0 8rem;
+  height: 100svh;
+  margin-left: 0 !important;
+}
+.jinan {
+  width: 13rem;
+}
+h1,
+p {
+  color: white;
+}
+p,
+.forgot,
+.website {
+  font-weight: 400;
+}
+h1 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+h1 b {
+  color: var(--yellow);
+  font-weight: 600;
+}
+input {
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+}
+::placeholder,
+.password-toggle {
+  color: grey;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.forgot,
+.website {
+  font-size: 0.75rem;
+}
+.website {
+  text-transform: lowercase;
+  bottom: 1rem;
+}
+.password-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+.error::placeholder {
+  color: var(--error);
+}
+button {
+  height: 40px;
+  font-size: 16px;
+  gap: 0.25rem;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .jinan {
+    width: 8rem;
+  }
+  form {
+    padding: 0 3rem 3rem 3rem;
+  }
+}

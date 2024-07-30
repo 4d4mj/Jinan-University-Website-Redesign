@@ -1,0 +1,146 @@
+.top-bar {
+  height: 3.5rem;
+  background-color: var(--dark);
+  overflow: hidden;
+  z-index: 97;
+  padding: 0 !important;
+}
+.science{
+  background-color: var(--science);
+}
+.health{
+  background-color: var(--health);
+}
+.business{
+  background-color: var(--business);
+}
+.communication{
+  background-color: var(--communication);
+}
+.lettres{
+  background-color: var(--lettres);
+}
+.education{
+  background-color: var(--education);
+}
+.political{
+  background-color: var(--political);
+}
+.name,
+.menu,
+h6 {
+  color: white;
+}
+.name {
+  text-transform: capitalize;
+  background-color: var(--light);
+  border-radius: 0 12px 12px 0;
+}
+.name span {
+  font-size: 1.5rem;
+}
+.menu {
+  border-radius: 12px 0 0 12px;
+  aspect-ratio: 1;
+  box-shadow: none;
+  height: 3.5rem;
+}
+.menu span {
+  font-size: 2rem;
+}
+.jinan {
+  padding: 6px 0;
+  height: 3.5rem;
+}
+.welcome {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h6 span {
+  font-weight: 400;
+}
+.side-bar {
+  border-radius: 24px 0 0 24px;
+  width: 18rem;
+  background-color: var(--dark);
+  transform: translate(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 99;
+}
+.side-bar .menu {
+  background-color: transparent;
+  border-radius: 0;
+}
+.side-bar .jinan {
+  height: 4rem;
+  padding: 0;
+}
+.side-bar h5 {
+  width: 6rem;
+  font-weight: 600;
+  color: var(--yellow);
+}
+a {
+  text-decoration: none;
+}
+.side-bar ul button {
+  font-weight: 600;
+  font-size: 16px;
+  height: 40px;
+  box-shadow: none;
+  background-color: transparent;
+}
+.menu .material-symbols-outlined,
+ul .material-symbols-outlined {
+  font-size: 24px !important;
+}
+.active {
+  background-color: white !important;
+  color: var(--dark);
+}
+.side-bar.open {
+  transform: translate(0);
+}
+.overlay {
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 98;
+  height: 100svh;
+}
+.side-bar.open ~ .overlay {
+  opacity: 0.5;
+}
+/* .pp {
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+}
+.profile {
+  color: var(--yellow);
+}
+.profile hr {
+  background-color: white;
+  height: 0.12rem;
+  opacity: 0.75;
+}
+.profile-info > * {
+  line-height: 1.2rem;
+}
+.profile-info .id {
+  font-size: 14px;
+} */
+@media (max-width: 768px) {
+  h6 {
+    display: none;
+  }
+  .side-title {
+    margin-bottom: 1rem !important;
+  }
+  /* .profile hr {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  } */
+}

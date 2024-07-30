@@ -1,0 +1,27 @@
+<div class="card-body h-100">
+  <div class="body-flex d-flex flex-column gap-2 h-100">
+    <div class="d-flex flex-column justify-content-between flex-grow-1">
+      <div class="top d-flex justify-content-between mb-2">
+        <p>{{ course.code }}</p>
+        <p>{{ course.type }}</p>
+      </div>
+      <h6>{{ course.name }}</h6>
+      <div class="d-flex justify-content-between">
+        <div class="stack">
+          <p>credits</p>
+          {{ course.credits }}
+        </div>
+        <div class="stack right">
+          <p>grade</p>
+          {{ course.grade }}
+        </div>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <button class="btn-text flex-grow-1">evaluation</button>
+      <button class="icon">
+        <span class="material-symbols-outlined position-absolute"> info </span>
+      </button>
+    </div>
+  </div>
+</div>

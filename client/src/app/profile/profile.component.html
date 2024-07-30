@@ -1,0 +1,69 @@
+<div class="side-container d-flex flex-column p-4 gap-3">
+  <div class="card d-flex flex-column gap-2"
+  *ngIf="router.url === '/home'">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="mb-0">This Semester</h5>
+      <button class="icon shadow-none">
+        <span class="material-symbols-outlined position-absolute">
+          calendar_month
+        </span>
+      </button>
+    </div>
+    <select name="semester" id="semester" class="mb-1" (change)="onSemesterChange($event)">
+      <option *ngFor="let semester of profile.semester; let i = index" [value]="i">{{ semester }}</option>
+    </select>
+    <div class="d-flex justify-content-between">
+      <div class="stack">
+        <p>total credits</p>
+        {{total}}
+      </div>
+      <div class="stack">
+        <p>passed</p>
+        {{passed}}
+      </div>
+      <div class="stack right">
+        <p>average</p>
+        {{average}}
+      </div>
+    </div>
+  </div>
+  <div class="card d-flex flex-column gap-2">
+    <div class="d-flex align-items-center gap-3">
+      <!-- <img src="../../assets/images/me.jpg" alt="" class="photo"> -->
+      <div class="d-flex flex-column">
+        <p class="name">{{ profile.name }}</p>
+        <p class="id">{{ profile.id }}</p>
+        <p class="major">{{ profile.major }}</p>
+        <p class="location">{{ profile.campus }}</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="stack">
+        <p>total</p>
+        {{16}}
+      </div>
+      <div class="stack">
+        <p>passed</p>
+        0
+      </div>
+      <div class="stack right">
+        <p>remaining</p>
+        100
+      </div>
+      <div class="stack right">
+        <p>average</p>
+        100
+      </div>
+    </div>
+  </div>
+  <div class="card d-flex flex-column gap-2 flex-grow-1">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="mb-0">next due vouchers</h5>
+      <button class="icon shadow-none">
+        <span class="material-symbols-outlined position-absolute">
+          attach_money
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

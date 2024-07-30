@@ -1,0 +1,7 @@
+.totals.card-body {
+  flex: 50%;
+  border-radius: 0.75rem;
+  background-color: var(--light);
+  flex-grow: 0;
+  padding: 0.5rem 1rem;
+}

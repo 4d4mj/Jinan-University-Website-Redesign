@@ -1,0 +1,126 @@
+<div class="top-bar container-fluid"></div>
+<div
+  class="top-bar container-fluid d-flex justify-content-between align-items-center position-fixed top-0"
+  [ngClass]="faculty"
+>
+  <div class="name d-flex align-items-center gap-1 h-100 px-3">
+    <span class="material-symbols-outlined"> {{icon}} </span>{{title}}
+  </div>
+  <div
+    class="welcome d-flex justify-content-center align-items-center gap-2 position-absolute"
+  >
+    <img
+      class="jinan"
+      src="../../assets/images/{{faculty}}.svg"
+      alt="Jinan Logo"
+    />
+    <h6 class="m-0"><span>Welcome, </span>Adam Jabado!</h6>
+  </div>
+  <button class="menu" (click)="navtoggle()">
+    <span class="material-symbols-outlined"> menu </span>
+  </button>
+</div>
+<div class="side-bar h-100 position-fixed end-0 px-4 d-flex flex-column justify-content-between position-absolute top-0"
+>
+  <button class="menu position-absolute end-0" (click)="navtoggle()">
+    <span class="material-symbols-outlined"> close </span>
+  </button>
+  <div class="side-title d-flex gap-2 mt-3 align-items-center mb-5">
+    <img
+      class="jinan"
+      src="../../assets/images/jinan-logo.svg"
+      alt="Jinan Logo"
+    />
+    <h5 class="mb-0">Jinan University</h5>
+  </div>
+  <ul class="d-flex flex-column gap-1 p-0">
+    <li>
+      <a routerLink="/home"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          home <span class="material-symbols-outlined"> home </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/registration"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          registration <span class="material-symbols-outlined"> add </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/payment"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          payment <span class="material-symbols-outlined"> attach_money </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/transcript"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          transcript <span class="material-symbols-outlined"> history </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/curriculum"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          curriculum <span class="material-symbols-outlined"> school </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/petitions"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          petitions <span class="material-symbols-outlined"> list </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/online"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          online classes
+          <span class="material-symbols-outlined"> computer </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/manuals"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          manuals
+          <span class="material-symbols-outlined"> developer_guide </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/manhal"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          al manhal
+          <span class="material-symbols-outlined"> local_library </span>
+        </button></a
+      >
+    </li>
+    <li>
+      <a routerLink="/help"
+        ><button routerLinkActive="active" class="w-100 justify-content-end px-3 gap-2">
+          help <span class="material-symbols-outlined"> help </span>
+        </button></a
+      >
+    </li>
+  </ul>
+  <!-- <div class="profile">
+    <hr class="my-3 mx-2"/>
+	<div class="d-flex justify-content-end align-items-center flex-grow-1 gap-2 mb-3">
+		<div class="profile-info d-flex flex-column align-items-end">
+		<i>Adam Jabado</i>
+		<p class="id mb-0">10220398</p>
+	</div>
+  <img src="../../assets/images/me.jpg" alt="" class="pp rounded-circle mx-2">
+	</div>
+  </div> -->
+  <button routerLink="/login" class="btn-danger mb-4">
+    log out
+    <span class="material-symbols-outlined"> logout </span>
+  </button>
+</div>
+<div class="overlay w-100 position-fixed top-0" (click)="navtoggle()"></div>

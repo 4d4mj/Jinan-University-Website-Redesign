@@ -1,0 +1,24 @@
+
+.body-flex {
+  flex-basis: 10px;
+}
+h6,
+.stack {
+  color: var(--yellow);
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 12rem;
+}
+.stack p {
+  color: white;
+  font-weight: 400;
+}
+.top {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  h6{
+    max-width: none;
+  }
+}

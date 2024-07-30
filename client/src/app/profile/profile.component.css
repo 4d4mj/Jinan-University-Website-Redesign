@@ -1,0 +1,36 @@
+  .side-container {
+	height: calc(100svh - 3.5rem);
+  }
+  h5 {
+	color: var(--light);
+	font-weight: 600;
+	font-size: 20px;
+  }
+  select {
+	background-color: var(--light);
+	border: none;
+	border-radius: 8px;
+	height: 32px;
+	color: white;
+	padding: 0 1rem;
+  }
+  .photo {
+	width: 6rem;
+	aspect-ratio: 1;
+	background-color: var(--dark);
+	border-radius: 12px;
+  }
+  .name,
+  .major {
+	color: var(--light);
+	text-transform: capitalize;
+  }
+  .name {
+	font-style: italic;
+	font-weight: 600;
+  }
+  .location {
+	text-transform: capitalize;
+	font-size: 12px;
+	font-weight: 600;
+  }

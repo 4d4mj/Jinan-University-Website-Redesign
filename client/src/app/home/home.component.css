@@ -1,0 +1,28 @@
+.container-fluid {
+  height: 100vh;
+  /* background-image: url(../../assets/images/home-temp.jpg); */
+  background-size: contain;
+  position: relative;
+}
+.profile{
+  position: fixed;
+}
+/* .cards{
+  height: 100%;
+} */
+@media (min-width: 768px) {
+  .cards> *{
+    flex-basis: calc((100% / 4) - ((4 - 1) * 1rem / 4));
+  }
+  }
+@media (max-width: 768px) {
+  .profile{
+    position: static;
+  }
+  .cards{
+    padding-top: 0 !important;
+  }
+  .cards> *{
+    width: 100%;
+  }
+  }
